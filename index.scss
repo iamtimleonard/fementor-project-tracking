@@ -11,9 +11,10 @@ $light-grayish-blue: hsl(207, 33%, 95%);
   padding: 0;
   font: {
     size: 10px;
-    family: "Barlow", sans-serif;
+    family: "Barlow Condensed", sans-serif;
   }
   color: $very-dark-blue;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -31,27 +32,50 @@ button {
   height: auto;
 }
 
-.schedule-btn {
-  border: none {
-    radius: 0.5rem;
-  }
-  background-color: $red;
-  color: $light-grayish-blue;
-  padding: 1rem;
-}
-
 .emphasize {
   background-color: $very-dark-blue;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1.5rem;
   color: $light-grayish-blue;
   margin-right: 1rem;
+  font-weight: 700;
 }
 
 .all-caps {
   text-transform: uppercase;
 }
 
+.font-med-light {
+  color: $dark-grayish-blue;
+}
+
 .font-light {
   color: $grayish-blue;
+}
+
+.title-text {
+  letter-spacing: 0.3rem;
+}
+
+.schedule-demo {
+  letter-spacing: 0.3rem;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  padding: 2.75rem;
+  height: 100%;
+}
+
+.description {
+  font-size: 2.4rem;
+}
+
+.schedule-btn {
+  border: none;
+  background-color: $red;
+  border-radius: 0.5rem;
+  color: $light-grayish-blue;
+  padding: 1rem 2rem;
 }
