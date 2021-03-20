@@ -7,4 +7,43 @@
   color: #242942;
 }
 
+h2 {
+  font-size: 3.6rem;
+}
+
+p,
+span,
+button {
+  font-size: 1.8rem;
+}
+
+.devices {
+  width: 137%;
+  height: auto;
+}
+
+.schedule-btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ff5c5c;
+  color: #eef3f6;
+  padding: 1rem;
+}
+
+.emphasize {
+  background-color: #242942;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: #eef3f6;
+  margin-right: 1rem;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.font-light {
+  color: #a0a1ac;
+}
+
 /*# sourceMappingURL=index.css.map */

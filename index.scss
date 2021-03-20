@@ -15,3 +15,43 @@ $light-grayish-blue: hsl(207, 33%, 95%);
   }
   color: $very-dark-blue;
 }
+
+h2 {
+  font-size: 3.6rem;
+}
+
+p,
+span,
+button {
+  font-size: 1.8rem;
+}
+
+.devices {
+  width: 137%;
+  height: auto;
+}
+
+.schedule-btn {
+  border: none {
+    radius: 0.5rem;
+  }
+  background-color: $red;
+  color: $light-grayish-blue;
+  padding: 1rem;
+}
+
+.emphasize {
+  background-color: $very-dark-blue;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: $light-grayish-blue;
+  margin-right: 1rem;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.font-light {
+  color: $grayish-blue;
+}
