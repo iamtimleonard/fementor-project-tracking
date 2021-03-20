@@ -40,16 +40,21 @@ header {
   text-align: center;
   height: 0;
   overflow: hidden;
-  transition: height 0.5s;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.nav-menu :nth-last-child(2) {
+  border-bottom: 1px solid #eef3f6;
 }
 
-.nav-menu.visible {
+.visible {
   box-shadow: 0 15px 15px 5px #5b5f71;
-  height: fit-content;
+  height: 20rem;
+  padding: 2rem;
 }
 
 .nav-item {
-  margin: 2rem;
+  padding: 1rem;
 }
 
 .nav-link {
