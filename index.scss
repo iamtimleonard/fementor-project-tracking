@@ -49,15 +49,15 @@ header {
   text-align: center;
   height: 0;
   overflow: hidden;
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   :nth-last-child(2) {
-    border-bottom: 1px solid $light-grayish-blue;
+    border-bottom: 1px solid $grayish-blue;
   }
 }
 
 .visible {
-  box-shadow: 0 15px 15px 5px $dark-grayish-blue;
+  box-shadow: 0 15px 20px 5px $grayish-blue;
   height: 20rem;
   padding: 2rem;
 }
