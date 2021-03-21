@@ -6,6 +6,14 @@ $dark-grayish-blue: hsl(230, 11%, 40%);
 $grayish-blue: hsl(231, 7%, 65%);
 $light-grayish-blue: hsl(207, 33%, 95%);
 
+@mixin all-caps {
+  text-transform: uppercase;
+}
+
+@mixin font-light {
+  color: $grayish-blue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,14 +39,6 @@ button {
   }
 }
 
-@mixin all-caps {
-  text-transform: uppercase;
-}
-
-@mixin font-light {
-  color: $grayish-blue;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -54,33 +54,34 @@ header {
   list-style: none;
   position: fixed;
   left: 3rem;
-  top: 8rem;
+  top: 7rem;
   width: 85%;
   z-index: 2;
   background-color: white;
   text-align: center;
   height: 0;
   overflow: hidden;
-  transition: height 0.5s ease, padding 0.5s ease, border 0.5s ease,
-    box-shadow 0.5s ease;
   :last-child a {
     color: $grayish-blue;
   }
-  -webkit-transition: height 0.5s ease, padding 0.5s ease, border 0.5s ease,
-    box-shadow 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .visible {
   box-shadow: 0 15px 20px 5px $grayish-blue;
-  height: 20rem;
+  height: 30rem;
   padding: 2rem;
   :nth-last-child(2) {
     border-bottom: 1px solid $grayish-blue;
+    padding-bottom: 2rem;
+  }
+  :last-child {
+    padding-top: 2rem;
   }
 }
 
 .nav-item {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .nav-link {
@@ -219,7 +220,16 @@ main {
   .nav-item {
     padding: 0;
     border: none;
-    margin-right: 4rem;
+    margin: 0 2rem;
+  }
+  .divider {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 3rem;
+    background: $grayish-blue;
+    opacity: 0.8;
+    border-radius: 50%;
+    align-self: center;
   }
   .visible {
     box-shadow: none;
