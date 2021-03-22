@@ -2,6 +2,13 @@ const navToggle = document.querySelector(".nav-toggle");
 const navButton = document.querySelector(".nav-button");
 const navMenu = document.querySelector(".nav-menu");
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1023) {
+    navMenu.classList.remove("visible");
+    navButton.src = "images/icon-hamburger.svg";
+  }
+});
+
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("visible");
   navMenu.classList.contains("visible")

@@ -48,14 +48,17 @@ header {
 .nav-toggle {
   border: none;
   background: none;
+  .nav-button {
+    margin-top: 0.5rem;
+  }
 }
 
 .nav-menu {
   list-style: none;
   position: fixed;
-  left: 3rem;
+  right: 3rem;
   top: 7rem;
-  width: 85%;
+  width: 90%;
   z-index: 2;
   background-color: white;
   text-align: center;
@@ -118,6 +121,10 @@ main {
   width: 51.5rem;
   margin-bottom: 4rem;
   overflow: hidden;
+}
+
+figcaption {
+  opacity: 0;
 }
 
 .devices {
@@ -230,14 +237,6 @@ main {
     opacity: 0.8;
     border-radius: 50%;
     align-self: center;
-  }
-  .visible {
-    box-shadow: none;
-    height: auto;
-    padding: 0;
-    :nth-last-child(2) {
-      border-bottom: none;
-    }
   }
 
   .image {
